@@ -39,7 +39,11 @@
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
+  white-space: normal;         /* allow line breaks */
+  word-break: keep-all;        /* word মাঝখানে ভাঙবে না */
+  overflow-wrap: anywhere;     /* শুধু space থাকলে break করবে */
     }
+    
     nav a:hover {
       text-decoration: underline;
     }
