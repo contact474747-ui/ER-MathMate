@@ -19,6 +19,12 @@
       padding: 20px;
       text-align: center;
     }
+    header img {
+      width: 100px;
+      height: 100px;
+      border-radius: 20%;
+      margin-bottom: 10px;
+    }
     header h1 {
       margin: 0;
       font-size: 28px;
@@ -49,6 +55,22 @@
     h2 {
       color: #0073e6;
     }
+    /* Screenshot Slider */
+    .slider {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 15px;
+      margin-top: 15px;
+    }
+    .slider img {
+      width: 250px;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 10px;
+      scroll-snap-align: start;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
     footer {
       text-align: center;
       padding: 15px;
@@ -60,6 +82,8 @@
 </head>
 <body>
   <header>
+    <!-- 🔹 Add your app icon here -->
+    <img src="app-icon.png" alt="ER MathMate Icon" />
     <h1>ER MathMate – Advanced Calculator</h1>
     <p>Your Smart Companion for Complex Calculations</p>
   </header>
@@ -67,6 +91,7 @@
   <nav>
     <a href="#about">About</a>
     <a href="#features">Features</a>
+    <a href="#screenshots">Screenshots</a>
     <a href="#privacy">Privacy Policy</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -90,6 +115,17 @@
     </ul>
   </section>
 
+  <!-- 🔹 Screenshot Section -->
+  <section id="screenshots">
+    <h2>App Screenshots</h2>
+    <div class="slider">
+      <img src="screenshot1.png" alt="Screenshot 1" />
+      <img src="screenshot2.png" alt="Screenshot 2" />
+      <img src="screenshot3.png" alt="Screenshot 3" />
+      <img src="screenshot4.png" alt="Screenshot 4" />
+    </div>
+  </section>
+
   <section id="privacy">
     <h2>Privacy Policy</h2>
     <p>
@@ -105,8 +141,7 @@
   <section id="contact">
     <h2>Contact</h2>
     <p>If you have any questions, feel free to contact us:</p>
-    <p><strong>Email: </strong><a href="mailto:contact474747@gmail.com">contact474747@gmail.com</a>
-  </p>
+    <p><strong>Email: </strong><a href="mailto:contact474747@gmail.com">contact474747@gmail.com</a></p>
   </section>
 
   <footer>
